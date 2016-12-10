@@ -486,7 +486,7 @@ class MainWindow(wx.Frame):
     def UpdateSearchHackSize(self):
         if(self.SpaceHack == True):
             self.dirtyHack.SetLabel("")
-            self.dirtyHack.SetSize((50,1))
+            self.dirtyHack.SetSize((self.GetSize()[0] - 540,1))
 
     def UpdateGaugePos(self):
         if(os.environ["POL_OS"] == "Mac"):
