@@ -159,8 +159,8 @@ class PanelManager(wx.aui.AuiManager):
 class MainWindow(wx.Frame):
     def __init__(self,parent,id,title):
 
-        wx.Frame.__init__(self, parent, 1000, title, size = (515,450))
-        self.SetMinSize((400,400))
+        wx.Frame.__init__(self, parent, 1000, title, size = (620,450))
+        self.SetMinSize((620,450))
         self.SetIcon(wx.Icon(Variables.playonlinux_env+"/etc/playonlinux.png", wx.BITMAP_TYPE_ANY))
 
         self.windowList = {}
@@ -184,7 +184,7 @@ class MainWindow(wx.Frame):
             self.windowHeight = int(playonlinux.GetSettings("MAINWINDOW_HEIGHT"))
             self.SetSize((self.windowWidth,self.windowHeight))
         except:
-            self.windowWidth = 500
+            self.windowWidth = 620
             self.windowHeight = 450
 
         # Window position
